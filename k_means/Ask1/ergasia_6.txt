@@ -1,0 +1,27 @@
+perhaps@perhaps-X555LAB:~/Desktop/Chatzidoukas/k_means/Ask1$ g++ main4_3_ergasia6.cpp -o m -fopt-info-vec-optimized
+perhaps@perhaps-X555LAB:~/Desktop/Chatzidoukas/k_means/Ask1$ time ./m
+Begin Clustering...
+tol: 1
+tol: 0.102851
+tol: 0.0225903
+tol: 0.0108221
+tol: 0.00683616
+tol: 0.00457851
+tol: 0.00290919
+tol: 0.00192091
+tol: 0.00144759
+tol: 0.00116207
+tol: 0.000943528
+tol: 0.000757392
+tol: 0.000644219
+tol: 0.000596691
+tol: 0.000577167
+tol: 0.000582968
+^C
+
+real	1m20.274s
+user	1m20.268s
+sys	0m0.005s
+
+
+

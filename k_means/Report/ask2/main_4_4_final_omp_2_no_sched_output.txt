@@ -1,0 +1,85 @@
+perhaps@perhaps-X555LAB:~/Desktop/Chatzidoukas/k_means$ g++ main4_4_final_omp_2_no_sched.cpp -I/usr/include/python2.7 -lpython2.7 -o mo.out -Wall -fopenmp -O2
+main4_4_final_omp_2_no_sched.cpp: In function ‘int main()’:
+main4_4_final_omp_2_no_sched.cpp:188:11: warning: ‘min_dist’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   #pragma omp parallel for reduction(+:temp) reduction(+:cumulative_dist) reduction(min:min_dist) //schedule(static)
+           ^~~
+main4_4_final_omp_2_no_sched.cpp:188:11: warning: ‘temp’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+perhaps@perhaps-X555LAB:~/Desktop/Chatzidoukas/k_means$ time ./mo.out
+Initializing...
+Begin Clustering...
+tol: 3.69437e+07
+tol: 9.67722e+06
+tol: 12134.6
+tol: 5553.17
+tol: 3243.73
+tol: 2102.26
+tol: 1442.11
+tol: 1082.65
+tol: 817.465
+tol: 640.499
+tol: 535.297
+tol: 442.354
+tol: 341.864
+tol: 281.952
+tol: 244.096
+tol: 209.563
+tol: 171.325
+tol: 140.673
+tol: 115.541
+tol: 105.226
+tol: 101.75
+tol: 95.777
+tol: 80.1164
+tol: 73.9877
+tol: 58.5198
+tol: 58.7766
+tol: 53.0162
+tol: 41.6458
+tol: 35.1138
+tol: 28.7212
+tol: 22.9247
+tol: 21.9477
+tol: 22.5841
+tol: 23.2445
+tol: 20.5849
+tol: 22.07
+tol: 18.1881
+tol: 18.7408
+tol: 16.0063
+tol: 17.417
+tol: 17.3567
+tol: 16.9445
+tol: 12.1283
+tol: 12.2708
+tol: 10.8569
+tol: 8.93516
+tol: 11.3088
+tol: 10.6145
+tol: 12.7668
+tol: 9.55091
+tol: 10.9189
+tol: 9.70038
+tol: 8.40439
+tol: 8.62008
+tol: 7.61718
+tol: 9.21985
+tol: 7.99002
+tol: 5.45474
+tol: 5.03769
+tol: 6.21822
+tol: 7.87688
+tol: 7.16399
+tol: 7.73513
+tol: 4.70803
+tol: 1.83921
+tol: 1.91871
+tol: 0.773203
+tol: 0.783617
+tol: 0.263413
+tol: 0
+Done!
+
+real	8m59.860s
+user	17m44.824s
+sys	0m0.517s
+

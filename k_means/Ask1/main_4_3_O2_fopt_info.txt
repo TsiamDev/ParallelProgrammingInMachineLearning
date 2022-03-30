@@ -1,0 +1,59 @@
+perhaps@perhaps-X555LAB:~/Desktop/Chatzidoukas/k_means/Ask1$ g++ main4_3.cpp -I/usr/include/python2.7 -lpython2.7 -Wall -o m -O2 -fopt-info
+In file included from main4_3.cpp:1:0:
+matplotlibcpp.h: In instantiation of ‘bool matplotlibcpp::detail::plot_impl<std::integral_constant<bool, false> >::operator()(const IterableX&, const IterableY&, const string&) [with IterableX = std::vector<double>; IterableY = std::vector<double>; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
+matplotlibcpp.h:2865:70:   required from ‘bool matplotlibcpp::plot(const A&, const B&, const string&, Args ...) [with A = std::vector<double>; B = std::vector<double>; Args = {std::vector<double, std::allocator<double> >, std::vector<double, std::allocator<double> >, const char*}; std::__cxx11::string = std::__cxx11::basic_string<char>]’
+main4_3.cpp:253:42:   required from here
+matplotlibcpp.h:2821:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for(size_t i = 0; i < xs; ++i) {
+                           ~~^~~~
+/usr/include/c++/7/bits/locale_facets.h:877:27: note: speculatively devirtualizing call in std::ctype<char>::char_type std::ctype<char>::widen(char) const/2831 to virtual std::ctype<char>::char_type std::ctype<char>::do_widen(char) const/978
+main4_3.cpp:39:20: note: loop turned into non-loop; it never loops.
+main4_3.cpp:39:20: note: loop with 3 iterations completely unrolled
+main4_3.cpp:178:21: note: loop turned into non-loop; it never loops.
+main4_3.cpp:178:21: note: loop with 3 iterations completely unrolled
+main4_3.cpp:140:21: note: loop turned into non-loop; it never loops.
+main4_3.cpp:140:21: note: loop with 3 iterations completely unrolled
+/usr/include/c++/7/bits/stl_algobase.h:753:13: note: loop turned into non-loop; it never loops.
+/usr/include/c++/7/bits/stl_algobase.h:753:13: note: loop with 3 iterations completely unrolled
+/usr/include/c++/7/bits/stl_algobase.h:753:13: note: loop turned into non-loop; it never loops.
+/usr/include/c++/7/bits/stl_algobase.h:753:13: note: loop with 3 iterations completely unrolled
+perhaps@perhaps-X555LAB:~/Desktop/Chatzidoukas/k_means/Ask1$ time ./m
+Begin Clustering...
+tol: 1
+tol: 0.102851
+tol: 0.0225903
+tol: 0.0108221
+tol: 0.00683616
+tol: 0.00457851
+tol: 0.00290919
+tol: 0.00192091
+tol: 0.00144759
+tol: 0.00116207
+tol: 0.000943528
+tol: 0.000757392
+tol: 0.000644219
+tol: 0.000596691
+tol: 0.000577167
+tol: 0.000582968
+tol: 0.000534382
+tol: 0.000485943
+tol: 0.000486969
+tol: 0.00046498
+tol: 0.000411562
+tol: 0.000358932
+tol: 0.000299387
+tol: 0.000271891
+tol: 0.000216326
+tol: 0.000223558
+tol: 0.000203433
+tol: 0.000195608
+tol: 0.000186038
+tol: 0.00016001
+tol: 0.000133648
+tol: 0.00010495
+tol: 9.78689e-05
+
+real	0m24.974s
+user	0m20.985s
+sys	0m0.069s
+

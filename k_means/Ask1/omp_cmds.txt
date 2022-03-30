@@ -1,0 +1,4 @@
+-fopt-info
+-fopt-info-vec-optimized
+
+-ffast-math (?)
